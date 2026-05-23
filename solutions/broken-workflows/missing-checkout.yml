@@ -1,0 +1,18 @@
+# Intentionally broken for Lab 11 troubleshooting practice.
+name: Broken Missing Checkout
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+      - run: npm ci
+      - run: npm test

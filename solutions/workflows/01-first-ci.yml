@@ -1,0 +1,19 @@
+name: First CI
+
+on:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello from GitHub Actions"
+
+      - name: Print context
+        run: |
+          echo "Runner OS: ${{ runner.os }}"
+          echo "Commit SHA: ${{ github.sha }}"

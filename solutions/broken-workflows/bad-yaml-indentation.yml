@@ -1,0 +1,13 @@
+# Intentionally broken for Lab 11 troubleshooting practice.
+name: Broken YAML Indentation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v6
+        - run: npm ci
+          working-directory: app

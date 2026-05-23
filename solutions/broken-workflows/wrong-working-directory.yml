@@ -1,0 +1,16 @@
+# Intentionally broken for Lab 11 troubleshooting practice.
+name: Broken Wrong Working Directory
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+      - run: npm ci
+      - run: npm test
