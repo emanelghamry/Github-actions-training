@@ -95,4 +95,4 @@ Expected result:
 
 ## Cleanup or next step
 
-Compare with `solutions/workflows/02-nodejs-ci.yml`, then continue to Lab 03.
+Continue to [Lab 03: pull request checks](03-pull-request-checks.md).
