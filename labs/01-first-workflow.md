@@ -24,6 +24,12 @@ Complete Lab 00 and push access to your GitHub repository.
 
 2. Create `.github/workflows/first-ci.yml`.
 
+   ```bash
+   cd .github/workflows
+   vi first-ci.yml
+   ```
+   Paste the below
+
    ```yaml
    name: First CI
 
