@@ -16,6 +16,7 @@ Complete Lab 00 and push access to your GitHub repository.
 
 
 1. Create the workflow directory.
+   Make sure you are on the root of the repo
 
    ```bash
    mkdir -p .github/workflows
